@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  task2:
+    image: node
+    ports:
+    - 7000:3000
+    working_dir: /lite-server
+    volumes:
+    - ./:/lite-server
+    command: bash pipe_lite_server.sh
